@@ -1,0 +1,23 @@
+{
+    "name": "News Reader",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Read news articles from any website",
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "scripting"
+    ],
+    "host_permissions": [ "http://*/*", "https://*/*"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "all_frames" : true,
+        "js": ["popup.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  

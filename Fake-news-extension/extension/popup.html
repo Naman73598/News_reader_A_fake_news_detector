@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap CDN -->
+    <link href="./imports/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="./imports/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <script src="./imports/jquery.min.js"  crossorigin="anonymous"></script>
+    
+    <style>
+        html {
+            height: 550px;
+            width: 775px;   
+            padding: 0;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <h1 class="bg-light text-center p-2 m-2">Fake News Detection</h1>
+
+    <div class="d-flex align-items-center justify-content-center flex-column gap-2">
+        <h4 class="text-left">Page Content</h4>
+    
+        <div class="card w-75 overflow-scroll">
+            <div class="card-body" style="max-height: 350px;">
+                <pre class="card-text text-wrap">
+                    <code id="page-content" class="mb-0"></code>
+                </pre>
+            </div>
+        </div>
+        
+        <div id="prediction" class="h4 p-2 w-75"></div>
+        <!-- <button class="btn btn-outline-success m-3">Check News</button> -->
+
+    </div>
+    
+
+    <script src="popup.js"></script>
+    
+</body>
+</html>
